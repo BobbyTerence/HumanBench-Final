@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Verbal Memory</title>
+        <meta charset="utf-8">
+        <meta num2="viewport" content="width=device-width initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <style>
+            body {
+                background-color: #1f363d;
+                color: #b0a3d4;
+            }
+
+            h1 {
+                margin-top: 30px;
+                text-align: center;
+            }
+
+            button {
+                margin-left: 1.75em;
+                margin-right: 1.75em;
+                margin-bottom: 3em;
+            }
+
+            .btn {
+                color: #1f363d;
+                background-color: #efd28d;
+            }
+
+            .btn:focus {
+                background-color: #efd28d;
+                color: #1f363d;
+            }
+        </style>        
+    </head>
+
+    <body class="container-fluid" id="onload" onload="onLoad()">
+        <script src="chimpTest.js"></script>
+        <h1>Human Benchmark</h1>
+
+        <div class="text-center" id="score-display"></div>
+
+        <span class="text-center" id="lives-left"></span>
+        
+        <div class="row">
+            <div class="col"></div>
+            <div class="col text-center" id="word-bank">
+                <p>This page is a simple example of a Human Benchmark test for Verbal Memory</p>
+                <p>There is a list of 26 unique words repeated five times each</p>
+                <p>Click new if it is a new word, and seen if you have seen the word before.</p>
+                <p>You will have three lives each round. Good Luck!</p>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col text-center" id="btn-pad">
+
+            </div>
+            <div class="col"></div>
+        </div>
+    </body>
+</html>
